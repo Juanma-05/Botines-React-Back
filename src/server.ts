@@ -1,11 +1,11 @@
-const express = require('express')
-const app = express()
+import express from "express";
+import productRouter from "../src/router/routes"
+
+const app = express();
 const port = 8080
 
-app.get('/', (req, res) => {
-  res.send('¡Hola, mundo!')
-})
+app.use('/', productRouter)
 
 app.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}`)
+  console.log(`Servidor corriendo en el puerto:`+port)
 })

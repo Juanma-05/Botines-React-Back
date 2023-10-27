@@ -43,5 +43,9 @@ app.get("/productosymercancia", (_, res) =>
 
 app.get("/productosymercancia/precio->-100",(_, res)=>{
   const productomayor100=productosymercancia.filter((producto)=>producto.precio>100);
-  res.json(productomayor100)
+  res.json(productomayor100);
 })
+
+app.put("/productosymercancia/modificar",(_, res)=>{
+    
+}

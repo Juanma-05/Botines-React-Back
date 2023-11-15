@@ -4,10 +4,10 @@ import {getFiltrer, getProducts} from "../controllers/controllers"
 const router =express.Router()
 
 //punto 1
-  router.get("/productosymercancia", getProducts)
+  router.get("/productos", getProducts)
   
 //punto 2
-  router.get("/productosymercancia/precios/:precios", getFiltrer)
+  router.get("/productos/precios/:precios", getFiltrer)
 
 //punto 3
 // router.put("/productosymercancia/filtrado/:filtrado",(req, res)=>{

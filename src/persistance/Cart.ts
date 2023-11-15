@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 
 @Entity()
-export class Products {
+export class Cart{
     @PrimaryGeneratedColumn()
     id!: number
 

@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
 export class Products {
@@ -14,4 +14,12 @@ export class Products {
     @Column()
     Imagen!: string
 
+    constructor (Nombre:string, Precio:number, Imagen:string){
+        this.Nombre=Nombre
+        this.Precio=Precio
+        this.Imagen=Imagen
+
+    }
+
 }
+

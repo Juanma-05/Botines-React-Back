@@ -8,7 +8,7 @@ const productos=[
 ];
 
 export const getAll=async() => {
-    await Db.gatAll()
+    await Db.getAll();   
 }
 
 export function getProducts (_: Request, res:Response){

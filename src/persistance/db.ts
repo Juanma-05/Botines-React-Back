@@ -1,9 +1,9 @@
 import {AppDataSource} from "./config"
-import {Users} from "./users"
+import {Users} from "./Users"
 
 export class Db {
     constructor(){}
-    getAll(){
+    static getAll(){
         return AppDataSource.manager.find (Users)
     }
 }

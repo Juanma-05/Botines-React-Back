@@ -14,4 +14,9 @@ export class Users {
     @Column()
     Contraseña!: string
 
+    constructor (Nombre:string, Email:string, Contraseña:string){
+        this.Nombre=Nombre
+        this.Email=Email
+        this.Contraseña=Contraseña;
+    }
 }
